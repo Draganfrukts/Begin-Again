@@ -69,7 +69,7 @@
 //N99  10mm								Keywords: 10mm, Semi-auto, 12/24 round magazine
 /obj/item/gun/ballistic/automatic/pistol/n99
 	name = "10mm pistol"
-	desc = "The Colt N99, an easily maintained, large-framed, long-barreled combat pistol in use by the US Army before the war. Comes with an integrated laser sight module."
+	desc = "The Colt N99 is an easily maintained, large-framed, long-barreled combat pistol in use by the US Army before the war. Comes with an integrated laser aiming module."
 	icon_state = "n99"
 	mag_type = /obj/item/ammo_box/magazine/m10mm
 	fire_delay = 3
@@ -114,7 +114,7 @@
 //Type 17								Keywords: 10mm, Semi-auto, 12/24 round magazine. Special modifiers: damage +1, spread +1
 /obj/item/gun/ballistic/automatic/pistol/type17
 	name = "Chinese pistol"
-	desc = "A standard issue Chinese Type-17 combat pistol, hacked apart and turned into a magazine-fed 10mm self-loader."
+	desc = "A standard-issue Norinco Type 80 personal defense weapon issued to PLA officers and crewmen at the height of the Sino-American war. It found its way to the US in droves through separatist cells and the invasion force. Chambered in 10mm."
 	icon_state = "chinapistol"
 	mag_type = /obj/item/ammo_box/magazine/m10mm
 	fire_delay = 1
@@ -122,7 +122,7 @@
 	spread = 3
 	can_suppress = FALSE
 	fire_sound = 'sound/f13weapons/10mm_fire_02.ogg'
-	extra_damage = 2
+	extra_penetration = 0.1
 
 //Stallard Arms JS-9					Keywords: 9mm, Semi-auto
 /obj/item/gun/ballistic/automatic/pistol/ninemil

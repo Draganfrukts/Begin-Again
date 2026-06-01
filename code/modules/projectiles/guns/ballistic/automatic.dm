@@ -818,7 +818,7 @@
 //FAL		Keywords: 7.62mm, 10/20 Rounds, Superhigh tier
 /obj/item/gun/ballistic/automatic/assault_rifle/fal
 	name = "automatic battle rifle"
-	desc = "A uniquely powerful pre-war FAL PARA battle rifle developed by FN Herstal. The shorter barrel and lightweight polymer furniture made it ideal for paratroopers across the European Commonwealth. Chambered in 7.62mm."
+	desc = "A uniquely powerful pre-war FN FAL HPFA battle rifle developed by FN Herstal. It's incredibly hefty, but its accuracy and stopping power made it a staple across the European Commonwealth and South America. Chambered in 7.62mm."
 	icon_state = "fal"
 	item_state = "fal"
 	fire_sound = 'sound/f13weapons/762assault_rifle.ogg'
