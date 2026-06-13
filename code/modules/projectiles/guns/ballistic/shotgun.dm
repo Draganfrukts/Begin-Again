@@ -15,7 +15,7 @@
 	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
-	icon_prefix = "shotgunpump"
+	icon_prefix = "shotgun"
 	icon_state = "shotgun"
 	item_state = "shotgun"
 	w_class = WEIGHT_CLASS_BULKY
@@ -96,8 +96,8 @@
 //Caravan shotgun							Keywords: Shotgun, Double barrel, saw-off, extra damage +3, extra pen 5%
 /obj/item/gun/ballistic/revolver/caravan_shotgun
 	name = "caravan shotgun"
-	desc = "A common over-under double barreled shotgun made in the post-war era."
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	desc = "A beat-up pre-war European style over/under double barrel shotgun. It still works, surprisingly."
+	icon = 'icons/obj/guns/gunfruits2022/shotguns.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "caravan"
@@ -109,7 +109,7 @@
 	spread = 20
 	force = 20
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/dual/simple
-	sawn_desc = "Short and concealable, terribly uncomfortable to fire, but worse on the other end."
+	sawn_desc = "A beat-up pre-war European style over/under double barrel shotgun. The stock has been mostly sawn away, and so has the barrel."
 	fire_sound = 'sound/f13weapons/caravan_shotgun.ogg'
 	recoil = 1.55
 
@@ -133,9 +133,9 @@
 
 //Widowmaker				Keywords: Shotgun, Double barrel, saw-off, extra damage +2, extra pen 15%
 /obj/item/gun/ballistic/revolver/widowmaker
-	name = "Winchester Widowmaker"
-	desc = "Old-world Winchester Widowmaker double-barreled 12 gauge shotgun, with mahogany furniture"
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	name = "coach gun"
+	desc = "An All-American wild west classic, courtesy of Winchester. Omar's coming!"
+	icon = 'icons/obj/guns/gunfruits2022/shotguns.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
 	icon_state = "widowmaker"
@@ -147,7 +147,7 @@
 	fire_delay = 2
 	spread = 20
 	force = 20
-	sawn_desc = "Someone took the time to chop the last few inches off the barrel and stock of this shotgun. Now, the wide spread of this hand-cannon's short-barreled shots makes it perfect for short-range crowd control."
+	sawn_desc = "...\"What is this, a pirate gun?\"..."
 	fire_sound = 'sound/f13weapons/max_sawn_off.ogg'
 	recoil = 0.55
 
@@ -170,14 +170,14 @@
 
 //Single shotgun
 /obj/item/gun/ballistic/revolver/singleshotgun
-	name = "Pardner 77 single-shot shotgun"
+	name = "single-shot shotgun"
 	desc = "An old-world New England Pardner shotgun, 2077 production line - right before the nukes."
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	icon = 'icons/obj/guns/gunfruits2022/shotguns.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
-	icon_state = "pardner"
+	icon_state = "single"
 	item_state = "shotgundouble"
-	icon_prefix = "pardner"
+	icon_prefix = "single"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/pardner
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_HEAVY
@@ -186,26 +186,27 @@
 	slowdown = 0.1
 	extra_damage = 4
 	extra_penetration = 0.05
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
 
 /obj/item/gun/ballistic/revolver/singleshotgun/axe
-	name = "Pardner 77 hatchet"
+	name = "'77 hatchet shotgun"
 	desc = "A New England Pardner that has been sawn down and had a fireaxe tightly attached to the barrel. The stock has been replaced by something more comfortable to hold on to."
-	icon_state = "pardneraxe"
+	icon_state = "singleaxe"
 	slowdown = 0.08
 	force = 35
 	armour_penetration = 0.1 //Not for the bullet. This is the gun.
 	wound_bonus = 15 //Same as above
 	extra_damage = 2 //Half of parent
-	icon_prefix = "pardneraxe"
+	icon_prefix = "singleaxe"
+	icon = 'icons/obj/guns/gunfruits2022/shotguns.dmi'
 
 //Hunting shotgun				Keywords: Shotgun, Pump-action, 4 rounds
 /obj/item/gun/ballistic/shotgun/hunting
 	name = "hunting shotgun"
-	desc = "A traditional hunting shotgun with wood furniture and a four-shell capacity underneath."
-	icon_state = "pump"
+	desc = "The pinnacle of firearms engineering, a pump-action shotgun with wood furniture. With its 12 gauge chamber, it doesn't matter what you're hunting - it'll go down."
+	icon_state = "hunting"
 	item_state = "shotgunpump"
-	icon_prefix = "shotgunpump"
+	icon_prefix = "hunting"
+	icon = 'icons/obj/guns/gunfruits2022/shotguns.dmi'
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/lethal
 	fire_delay = 3
 
@@ -221,10 +222,11 @@
 //Police Shotgun				Keywords: Shotgun, Pump-action, 6 rounds, Folding stock, Flashlight rail
 /obj/item/gun/ballistic/shotgun/police
 	name = "police shotgun"
-	desc = "A pre-war shotgun with large magazine and folding stock, made from steel and polymers. Flashlight attachment rail."
-	icon_state = "shotgunpolice"
+	desc = "A pre-war pump-action SPAS-12 shotgun that was widely adopted by police institutions across the European Commonwealth and United States."
+	icon = 'icons/obj/guns/gunfruits2022/shotguns.dmi'
+	icon_state = "police"
 	item_state = "shotgunpolice"
-	icon_prefix = "shotgunpolice"
+	icon_prefix = "police"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/police
 	sawn_desc = "Portable but with a poor recoil managment."
 	w_class = WEIGHT_CLASS_NORMAL
@@ -267,7 +269,8 @@
 //Trench shotgun					Keywords: Shotgun, Pump-action, 5 rounds, Bayonet
 /obj/item/gun/ballistic/shotgun/trench
 	name = "trench shotgun"
-	desc = "A military shotgun designed for close-quarters fighting, equipped with a bayonet lug."
+	desc = "A pump-action combat shotgun that can take a bayonet, with a blisteringly fast rate of fire. Banned by NO international conventions."
+	icon = 'icons/obj/guns/gunfruits2022/shotguns.dmi'
 	icon_state = "trench"
 	item_state = "shotguntrench"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/trench
@@ -405,8 +408,9 @@
 
 //Winchester City-Killer				Keywords: Shotgun, Full-auto, 10 rounds internal
 /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
-	name = "Winchester City-Killer shotgun"
-	desc = "A semi automatic shotgun with black tactical furniture made by Winchester Arms. This particular model uses an internal tube magazine."
+	name = "combat shotgun"
+	desc = "A bullpup variant of the Winchester City-Killer combat shotgun in excellent condition. It's been fitted with the DesertWarfare© environmental sealant modification for extra reliability."
+	icon = 'icons/obj/guns/gunfruits2022/shotguns.dmi'
 	icon_state = "citykiller"
 	item_state = "shotguncity"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/com/citykiller
@@ -419,12 +423,12 @@
 
 //Riot shotgun							Keywords: Shotgun, Semi-auto, 12 round magazine, Pistol grip
 /obj/item/gun/ballistic/automatic/shotgun/riot
-	name = "Riot shotgun"
-	desc = "A compact riot shotgun with a large ammo drum and semi-automatic fire, designed to fight in close quarters."
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
+	name = "riot shotgun"
+	desc = "An accurate long-barreled semi-automatic shotgun designed for riot control use by the National Guard. It takes drum magazines."
+	icon = 'icons/obj/guns/gunfruits2022/shotguns.dmi'
 	lefthand_file = 'icons/fallout/onmob/weapons/guns_lefthand.dmi'
 	righthand_file = 'icons/fallout/onmob/weapons/guns_righthand.dmi'
-	icon_state = "shotgunriot"
+	icon_state = "riot"
 	item_state = "shotgunriot"
 	w_class = WEIGHT_CLASS_BULKY
 	mag_type = /obj/item/ammo_box/magazine/d12g

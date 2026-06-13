@@ -278,6 +278,7 @@
 	extra_damage = 10
 	extra_speed = -150
 	extra_penetration = -0.1
+	icon = 'icons/obj/guns/gunfruits2022/pistols.dmi'
 
 //Desert Ranger revolver			Keywords: .44, Single action, 6 rounds cylinder,
 /obj/item/gun/ballistic/revolver/revolver44/desert_ranger
