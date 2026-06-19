@@ -228,7 +228,6 @@
 	item_state = "shotgunpolice"
 	icon_prefix = "police"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/police
-	sawn_desc = "Portable but with a poor recoil managment."
 	w_class = WEIGHT_CLASS_NORMAL
 	recoil = 0.5
 	fire_delay = 3
@@ -263,7 +262,7 @@
 	update_icon()
 
 /obj/item/gun/ballistic/shotgun/police/update_icon_state()
-	icon_state = "[current_skin ? unique_reskin[current_skin] : "shotgunpolice"][stock ? "" : "fold"]"
+	icon_state = "[current_skin ? unique_reskin[current_skin] : "police"][stock ? "" : "fold"]"
 
 
 //Trench shotgun					Keywords: Shotgun, Pump-action, 5 rounds, Bayonet
@@ -312,16 +311,16 @@
 
 //Browning Auto-5						Keywords: Shotgun, Semi-auto, 4 rounds internal
 /obj/item/gun/ballistic/shotgun/automatic/combat/auto5
-	name = "Browning Auto-5"
-	desc = "A semi automatic shotgun with a four round tube."
+	name = "repeating shotgun"
+	desc = "The crown jewel of self-loading shotguns, Browning's own Auto-5. It was the first commercially succesful semi-automatic shotgun ever made."
 	fire_delay = 5
 	recoil = 2
 	icon_state = "auto5"
+	icon = 'icons/obj/guns/gunfruits2022/shotguns.dmi'
 	item_state = "shotgunauto5"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/com/compact
 	fire_sound = 'sound/f13weapons/auto5.ogg'
 	insert_sound = 'sound/weapons/guns/insert_shell_auto.ogg'
-
 
 //Lever action shotgun					Keywords: Shotgun, Lever-action, 5 round magazine, Pistol grip
 /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
@@ -342,69 +341,6 @@
 	bayonet_state = "bayonet"
 	knife_x_offset = 23
 	knife_y_offset = 23
-
-
-//Neostead 2000							Keywords: BOS, Shotgun, Semi-auto, 12 rounds internal
-/obj/item/gun/ballistic/shotgun/automatic/combat/neostead
-	name = "Neostead 2000"
-	desc = "An advanced shotgun with two separate magazine tubes, allowing you to quickly toggle between ammo types."
-	icon_state = "neostead"
-	item_state = "shotguncity"
-	fire_delay = 5 //why was this worse than the leveraction?
-	recoil = 1.3
-	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube
-	force = 10
-	insert_sound = 'sound/weapons/guns/insert_shell_auto.ogg'
-	var/toggled = FALSE
-	var/obj/item/ammo_box/magazine/internal/shot/alternate_magazine
-
-/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/examine(mob/user)
-	. = ..()
-	. += "<span class='notice'>Alt-click to switch tubes.</span>"
-
-/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/Initialize(mapload)
-	. = ..()
-	if (!alternate_magazine)
-		alternate_magazine = new mag_type(src)
-
-/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/attack_self(mob/living/user)
-	. = ..()
-	if(!magazine.contents.len)
-		toggle_tube(user)
-
-/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/proc/toggle_tube(mob/living/user)
-	var/current_mag = magazine
-	var/alt_mag = alternate_magazine
-	magazine = alt_mag
-	alternate_magazine = current_mag
-	toggled = !toggled
-	if(toggled)
-		to_chat(user, "You switch to tube B.")
-	else
-		to_chat(user, "You switch to tube A.")
-
-/obj/item/gun/ballistic/shotgun/automatic/combat/neostead/AltClick(mob/living/user)
-	if(!user.canUseTopic(src, BE_CLOSE, ismonkey(user)))
-		return
-	toggle_tube(user)
-
-//Neostead 2000 NO TUBE SWAP							Keywords: Khan, Shotgun, Semi-auto, 12 rounds internal
-/obj/item/gun/ballistic/shotgun/automatic/combat/neostead_noalt
-	name = "Neostead 2000"
-	desc = "An advanced shotgun with two separate magazine tubes."
-	icon_state = "neostead"
-	item_state = "shotguncity"
-	fire_delay = 5
-	recoil = 1.3
-	mag_type = /obj/item/ammo_box/magazine/internal/shot/tube_noalt
-	force = 10
-
-/obj/item/gun/ballistic/shotgun/automatic/combat/neostead_noalt/khan
-	name = "Cold Water"
-	desc = "A personalized Neostead shotgun belonging to a Senior Enforce of the Great Khans."
-	fire_delay = 3.5
-	recoil = 1
-	force = 12
 
 //Winchester City-Killer				Keywords: Shotgun, Full-auto, 10 rounds internal
 /obj/item/gun/ballistic/shotgun/automatic/combat/citykiller
@@ -452,10 +388,11 @@
 	recoil = 1
 	slowdown = 0.65 //added so it's not just a straight upgrade sort of unique. total of 0.8 slowdown when used with S.E armor
 
-/obj/item/gun/ballistic/automatic/shotgun/pancor
-	name = "Pancor Jackhammer"
-	desc = "The Jackhammer, despite its name, is an easy to control shotgun, even when fired on full automatic. The popular bullpup design, which places the magazine behind the trigger, makes the weapon well balanced & easy to control." //Nod to Fallout 2 in the description :)
-	icon_state = "pancor"
+/obj/item/gun/ballistic/automatic/shotgun/caws
+	name = "precision shotgun"
+	desc = "A carefully engineered H&K CAWS shotgun with a long barrel, scope, and cutting edge ergonomics. It was fielded in limited quantities to United States special forces and certain counter-terror organisations in the European Commonwealth."
+	icon_state = "caws"
+	icon = 'icons/obj/guns/gunfruits2022/shotguns.dmi'
 	item_state = "cshotgun1"
 	fire_sound = 'sound/f13weapons/repeater_fire.ogg'
 	mag_type = /obj/item/ammo_box/magazine/d12g

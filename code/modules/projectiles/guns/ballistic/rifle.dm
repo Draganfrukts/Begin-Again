@@ -219,7 +219,7 @@
 //Paciencia								Keywords: UNIQUE, .308, Bolt-action, 3 rounds internal, Scoped
 /obj/item/gun/ballistic/rifle/hunting/paciencia
 	name = "Paciencia"
-	desc = "A modified .308 hunting rifle with a reduced magazine but an augmented receiver. A Mexican flag is wrapped around the stock. You only have three shots- make them count."
+	desc = "A modified .308 hunting rifle with a reduced magazine but an augmented receiver. A Mexican flag is wrapped around the stock. You only have three shots - make them count."
 	icon_state = "paciencia"
 	item_state = "paciencia"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction/hunting/paciencia
@@ -243,10 +243,11 @@
 		..()
 
 //Mosin-Nagant							Keywords: LEFT-OVER FOR RUSSIAN MOBS, 7.62, Bolt-action, 5 rounds internal. Better pen than the Enfield, lower damage.
-/obj/item/gun/ballistic/rifle/mosin
-	name = "Mosin-Nagant m38"
-	desc = "A rusty old Russian bolt action chambered in 7.62."
-	icon_state = "mosin"
+/obj/item/gun/ballistic/rifle/mosin		//I'll probably nuke this holdover later
+	name = "old army rifle"
+	desc = "A venerable bolt-action Springfield M1903 originally used by the US Army as far back as its model name suggests. It has definitely seen better days."
+	icon_state = "m1903"
+	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
 	item_state = "308"
 	mag_type = /obj/item/ammo_box/magazine/internal/boltaction
 	extra_speed = 600

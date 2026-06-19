@@ -560,7 +560,7 @@
 
 //remington rifle
 /datum/crafting_recipe/remingtonhuntingrifle
-	name = "Hunting Rifle"
+	name = "upgraded hunting rifle"
 	result = /obj/item/gun/ballistic/rifle/hunting/remington
 	reqs = list(/obj/item/stack/crafting/goodparts = 2,
 				/obj/item/stack/crafting/metalparts = 2,
@@ -777,21 +777,6 @@
 				/obj/item/advanced_crafting_components/receiver = 1,
 				/obj/item/stack/crafting/metalparts = 5,
 				/obj/item/stack/crafting/electronicparts = 15
-				)
-	tools = list(TOOL_AWORKBENCH)
-	time = 120
-	category = CAT_WEAPONRY
-	subcategory = CAT_WEAPON
-	always_available = FALSE
-
-/datum/crafting_recipe/neostead
-	name = "Neostead 2000"
-	result = /obj/item/gun/ballistic/shotgun/automatic/combat/neostead_noalt
-	reqs = list(/obj/item/stack/sheet/metal = 10,
-				/obj/item/advanced_crafting_components/assembly = 1,
-				/obj/item/advanced_crafting_components/alloys = 1,
-				/obj/item/advanced_crafting_components/receiver = 1,
-				/obj/item/stack/crafting/goodparts = 15,
 				)
 	tools = list(TOOL_AWORKBENCH)
 	time = 120

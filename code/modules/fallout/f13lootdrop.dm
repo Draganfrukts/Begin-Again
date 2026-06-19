@@ -1000,7 +1000,7 @@
 				)
 
 /obj/effect/spawner/bundle/f13/mosin
-	name = "mosin nagant and ammo spawner"
+	name = "m1903 and ammo spawner"
 	items = list(
 				/obj/item/gun/ballistic/rifle/mosin,
 				/obj/item/ammo_box/a762mm
@@ -1291,13 +1291,6 @@
 	items = list(
 				/obj/item/gun/ballistic/automatic/pistol/pistol14,
 				/obj/item/ammo_box/magazine/m14mm
-	)
-
-/obj/effect/spawner/bundle/f13/neostead
-	name = "Neostead 2000 shotgun and ammo spawner"
-	items = list(
-				/obj/item/gun/ballistic/shotgun/automatic/combat/neostead_noalt,
-				/obj/item/ammo_box/shotgun/buck
 	)
 
 /obj/effect/spawner/bundle/f13/auto5
@@ -2344,7 +2337,6 @@
 	icon_state = "blueprint_loot"
 	lootcount = 1
 	loot = list(
-		/obj/item/book/granter/crafting_recipe/blueprint/neostead,
 		/obj/item/book/granter/crafting_recipe/blueprint/riotshotgun,
 		/obj/item/book/granter/crafting_recipe/blueprint/sniper,
 		/obj/item/book/granter/crafting_recipe/blueprint/brushgun,
