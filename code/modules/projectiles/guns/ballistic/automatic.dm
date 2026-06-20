@@ -444,9 +444,9 @@
 //Scout carbine			Keywords: NCR, 5.56mm, Semi-auto, 20 (10-50) round magazine. Special modifiers:spread -1
 /obj/item/gun/ballistic/automatic/service/carbine
 	name = "scout carbine"
-	desc = "A cut down version of the standard-issue service rifle tapped with mounting holes for a scope. Shorter barrel, lower muzzle velocity."
-	icon = 'icons/fallout/objects/guns/ballistic.dmi'
-	icon_state = "scout_carbine"
+	desc = "A Gun Runners made Ruger AC556 carbine meant to replace the service rifle for specialist and scouting uses. Chambered in 5.56mm."
+	icon = 'icons/obj/guns/gunfruits2022/rifles.dmi'
+	icon_state = "ac556"
 	spread = 1.2
 	slowdown = 0.05
 	can_scope = TRUE

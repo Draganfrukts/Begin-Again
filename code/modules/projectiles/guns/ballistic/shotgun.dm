@@ -325,10 +325,11 @@
 //Lever action shotgun					Keywords: Shotgun, Lever-action, 5 round magazine, Pistol grip
 /obj/item/gun/ballistic/shotgun/automatic/combat/shotgunlever
 	name = "lever action shotgun"
-	desc = "A pistol grip lever action shotgun with a five-shell capacity underneath plus one in chamber."
-	icon_state = "shotgunlever"
+	desc = "An old-timey sawn down Model 1887 lever action shotgun that was quickly forgotten due to the existence of other more effective repeating shotguns. It looks cool, though."
+	icon_state = "lever"
+	icon = 'icons/obj/guns/gunfruits2022/shotguns.dmi'
 	item_state = "shotgunlever"
-	icon_prefix = "shotgunlever"
+	icon_prefix = "lever"
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/trench
 	fire_delay = 6
 	slowdown = 0.25
